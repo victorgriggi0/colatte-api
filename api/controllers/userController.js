@@ -24,7 +24,7 @@ class UserController {
 
       res.status(200).json({ users });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }
@@ -58,7 +58,7 @@ class UserController {
 
       res.status(200).json({ user });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }
@@ -91,7 +91,7 @@ class UserController {
 
       res.status(201).json({ newUser });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }
@@ -119,7 +119,7 @@ class UserController {
 
       res.status(200).send({ message: "O registro foi excluído com sucesso." });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }
@@ -166,7 +166,7 @@ class UserController {
 
       res.status(200).send({ updatedUser });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }

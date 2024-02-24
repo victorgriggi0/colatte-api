@@ -7,7 +7,7 @@ const workspaceController = new WorkspaceController();
 const router = Router();
 
 router
-  .get("/workspaces", authenticated, workspaceController.getAll)
+  .get("/workspaces/all", authenticated, workspaceController.getAll)
   .get("/workspace/:id", authenticated, workspaceController.getById)
   .post("/workspace", authenticated, workspaceController.create)
   .delete("/workspace/:id", authenticated, workspaceController.deleteById)

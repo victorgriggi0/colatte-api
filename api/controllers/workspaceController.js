@@ -9,7 +9,7 @@ class WorkspaceController {
 
       res.status(200).json({ workspaces });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }
@@ -31,7 +31,7 @@ class WorkspaceController {
 
       res.status(200).json({ workspace });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }
@@ -61,7 +61,7 @@ class WorkspaceController {
 
       res.status(201).json({ newWorkspace });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }
@@ -89,7 +89,7 @@ class WorkspaceController {
 
       res.status(200).send({ message: "O registro foi excluído com sucesso." });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }
@@ -118,7 +118,7 @@ class WorkspaceController {
 
       res.status(200).send({ updatedWorkspace });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }

@@ -49,7 +49,7 @@ class AuthController {
 
       res.status(200).json({ accessToken });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }

@@ -22,7 +22,7 @@ class RoleController {
 
       res.status(200).json({ roles });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }
@@ -56,7 +56,7 @@ class RoleController {
 
       res.status(200).json({ role });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }
@@ -84,7 +84,7 @@ class RoleController {
 
       res.status(201).json({ newRole });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }
@@ -112,7 +112,7 @@ class RoleController {
 
       res.status(200).send({ message: "O registro foi excluído com sucesso." });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }
@@ -139,7 +139,7 @@ class RoleController {
 
       res.status(200).send({ updatedRole });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }

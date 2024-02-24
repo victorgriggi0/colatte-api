@@ -76,7 +76,7 @@ class securityController {
 
       return res.status(200).send({ userWithNewAcl });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }
@@ -145,7 +145,7 @@ class securityController {
 
       return res.status(200).send({ userWithNewAcl });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }
@@ -198,7 +198,7 @@ class securityController {
 
       return res.status(200).send({ roleWithNewPermissions });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }
@@ -246,7 +246,7 @@ class securityController {
 
       return res.status(200).send({ roleWithNewPermissions });
     } catch (error) {
-      console.error("message error: ", error);
+      console.error("error:", error);
       res.status(400).send({ message: error.message });
     }
   }
